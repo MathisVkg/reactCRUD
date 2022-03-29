@@ -51,3 +51,5 @@ C:\Users\mvk18\Documents\Repository\reactCRUD\WebApi\WebApi\obj\Debug\net6.0\ref
 C:\Users\mvk18\Documents\Repository\reactCRUD\WebApi\WebApi\obj\Debug\net6.0\WebApi.pdb
 C:\Users\mvk18\Documents\Repository\reactCRUD\WebApi\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\mvk18\Documents\Repository\reactCRUD\WebApi\WebApi\obj\Debug\net6.0\ref\WebApi.dll
+C:\Users\mvk18\Documents\Repository\reactCRUD\WebApi\WebApi\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\mvk18\Documents\Repository\reactCRUD\WebApi\WebApi\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll

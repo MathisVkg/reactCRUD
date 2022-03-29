@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FIn1fhnjwqrIvIhvBJtHR0NULRRXyUAMIfPDr6PcrXGYocnmf+wic25jWPcLI1f1ehILFB0mHdcF0h/ZtwhFRw==",
+  "dgSpecHash": "vGNnowCDREJlrfbzDQKvWBKWDuOTRqHgS2iBNf4tcbMftwlMVNySYIBN56rux9Z1lzCVDmwkfiQGJOJ1KYRsYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mvk18\\Documents\\Repository\\reactCRUD\\WebApi\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,8 @@
     "C:\\Users\\mvk18\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\mvk18\\.nuget\\packages\\mysql.data\\8.0.28\\mysql.data.8.0.28.nupkg.sha512",
     "C:\\Users\\mvk18\\.nuget\\packages\\mysql.entityframeworkcore\\6.0.0\\mysql.entityframeworkcore.6.0.0.nupkg.sha512",
+    "C:\\Users\\mvk18\\.nuget\\packages\\mysqlconnector\\2.1.2\\mysqlconnector.2.1.2.nupkg.sha512",
+    "C:\\Users\\mvk18\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.1\\pomelo.entityframeworkcore.mysql.6.0.1.nupkg.sha512",
     "C:\\Users\\mvk18\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\mvk18\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\mvk18\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",

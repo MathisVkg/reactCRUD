@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<WebApi.Data.Order>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -6,3 +7,28 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<h2>Orders</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Dish</th>
+            <th>Categorie</th>
+            <th>Provider</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <th>@item.Id</th>
+            <th>@item.Dish</th>
+            <th>@item.FamilyDish</th>
+            <th>@item.Provider</th>
+            <th>@item.Price</th>
+        </tr>
+        }
+    </tbody>
+</table>
