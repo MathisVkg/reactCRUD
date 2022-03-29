@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mvk18\\Documents\\Repository\\reactCRUD\\WebAPI\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\mvk18\\Documents\\Repository\\reactCRUD\\WebApi\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mvk18\\Documents\\Repository\\reactCRUD\\WebAPI\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\mvk18\\Documents\\Repository\\reactCRUD\\WebApi\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mvk18\\Documents\\Repository\\reactCRUD\\WebAPI\\WebAPI\\WebAPI.csproj",
-        "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\mvk18\\Documents\\Repository\\reactCRUD\\WebAPI\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\mvk18\\Documents\\Repository\\reactCRUD\\WebApi\\WebApi\\WebApi.csproj",
+        "projectName": "WebApi",
+        "projectPath": "C:\\Users\\mvk18\\Documents\\Repository\\reactCRUD\\WebApi\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\mvk18\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mvk18\\Documents\\Repository\\reactCRUD\\WebAPI\\WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\mvk18\\Documents\\Repository\\reactCRUD\\WebApi\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mvk18\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,19 +44,15 @@
               "target": "Package",
               "version": "[6.0.3, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.3, )"
-            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.3, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "MySql.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
