@@ -20,3 +20,17 @@ body {
 .btnDelete {
   margin-right: 15px;
 }
+
+.modal-header {
+  position: relative;
+}
+
+.cross-modal {
+  position: absolute;
+  top: 17px;
+  right: 25px;
+}
+
+.modal-footer {
+  background-color: #cccccc;
+}
