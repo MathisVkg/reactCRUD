@@ -7,8 +7,7 @@ body {
 .containerTop {
   background-color: #0d6efd;
   margin: 0;
-  margin-top: 15px;
-  padding: 5px 15px;
+  padding: 15px 25px;
 }
 
 .title {
@@ -17,8 +16,17 @@ body {
   margin: 0;
 }
 
+.modalTitle {
+  margin: 0;
+}
+
 .btnDelete {
   margin-right: 15px;
+}
+
+.colorBtn {
+  background-color: #2db374 !important;
+  border: #2db374 !important;
 }
 
 .modal-header {
@@ -27,10 +35,95 @@ body {
 
 .cross-modal {
   position: absolute;
-  top: 17px;
+  top: 12px;
   right: 25px;
 }
 
 .modal-footer {
   background-color: #cccccc;
+}
+
+.iconSuccess {
+  font-size: 4.5em;
+  margin: 15px 0;
+}
+
+path {
+  stroke: #2db374;
+}
+
+.modalTitleSuccess {
+  font-size: 1.8em;
+  margin-bottom: 0;
+}
+
+.modalSuccessContent {
+  margin-top: 5px;
+  font-size: 1.2em;
+  color: #585858;
+}
+
+.buttonOk {
+  color: #fff;
+  background-color: #6f42c1;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btnCancel {
+  position: absolute;
+  right: 95px;
+  bottom: 20px;
+}
+
+.btnSubmit {
+  position: absolute;
+  right: 15px;
+  bottom: -55px;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: #2db374;
+  border: 1px solid #2db374;
+  padding: 0.175rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.modal-content {
+  position: relative;
+  border: unset !important;
+}
+
+.modal-footer {
+  height: 80px;
+  background-color: #e9e7e7 !important;
+  border-bottom: 2px solid #d4d4d4;
+}
+
+.modal-dialog {
+  max-width: 625px !important;
+}
+
+.errorSpan {
+  margin-top: 5px;
+  color: rgb(216, 79, 79);
+}
+
+.btnEdit {
+  position: relative;
+  z-index: 200;
 }

@@ -9,6 +9,10 @@ namespace WebAPIReactCrud.Models
 
         }
 
-        public DbSet<Orders> Orders { get; set; }
+        public DbSet<Order> Orders { get; set; }
+
+        public DbSet<Provider> Providers { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
     }
 }

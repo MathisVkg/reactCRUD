@@ -33,3 +33,5 @@ C:\Users\mvk18\Documents\Repository\reactCRUD\WebAPIReactCrud\WebAPIReactCrud\bi
 C:\Users\mvk18\Documents\Repository\reactCRUD\WebAPIReactCrud\WebAPIReactCrud\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\mvk18\Documents\Repository\reactCRUD\WebAPIReactCrud\WebAPIReactCrud\bin\Debug\net6.0\MySqlConnector.dll
 C:\Users\mvk18\Documents\Repository\reactCRUD\WebAPIReactCrud\WebAPIReactCrud\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\mvk18\Documents\Repository\reactCRUD\WebAPIReactCrud\WebAPIReactCrud\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\mvk18\Documents\Repository\reactCRUD\WebAPIReactCrud\WebAPIReactCrud\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

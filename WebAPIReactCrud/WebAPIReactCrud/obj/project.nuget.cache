@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "TMxEMQJ9uKnadGIiYy/IKPnPZHiH103c3eP/Zld3CI4LLSOnKjOQVv3f89nGIPSTab+EHl9koYVF1zz2dYJ+2w==",
+  "dgSpecHash": "HoSSQ+agbGsOGronGx5BV4gnfKjzIPTvZzv2wUjyIlbfQUVrRvuKi3rmc9mPsz1+CzHaieysFjb6Ty/txZgDdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mvk18\\Documents\\Repository\\reactCRUD\\WebAPIReactCrud\\WebAPIReactCrud\\WebAPIReactCrud.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mvk18\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\mvk18\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\mvk18\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\mvk18\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\mvk18\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
     "C:\\Users\\mvk18\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.3\\microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512",
     "C:\\Users\\mvk18\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.3\\microsoft.entityframeworkcore.analyzers.6.0.3.nupkg.sha512",

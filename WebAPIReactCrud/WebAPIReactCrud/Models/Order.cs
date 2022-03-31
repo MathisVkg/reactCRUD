@@ -2,7 +2,7 @@
 
 namespace WebAPIReactCrud.Models
 {
-    public class Orders
+    public class Order
     {
         public int Id { get; set; }
 
@@ -10,11 +10,11 @@ namespace WebAPIReactCrud.Models
         public string Dish { get; set; }
 
         [MaxLength(100)]
-        public string FamilyDish { get; set; }
+        public string Category { get; set; }
 
         [MaxLength(100)]
         public string Provider { get; set; }
 
-        public int Price { get; set; }
+        public decimal Price { get; set; }
     }
 }

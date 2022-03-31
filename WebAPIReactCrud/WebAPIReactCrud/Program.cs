@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen(c =>
 var provider = builder.Services.BuildServiceProvider();
 var configuration = provider.GetService<IConfiguration>();
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
-builder.Services.AddDbContext<MyDbContext>(options => options.UseMySql("server=localhost; user=root; password=qeHZd84fPU37; database=dishGestionDb;", serverVersion));
+builder.Services.AddDbContext<MyDbContext>(options => options.UseMySql("server=localhost; user=root; password=qeHZd84fPU37; database=ReactCrudDb;", serverVersion));
 
 builder.Services.AddCors(options =>
 {
