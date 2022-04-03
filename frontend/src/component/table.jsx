@@ -5,9 +5,8 @@ function Table(props) {
     const category = props.dataCategory;
     const provider = props.dataProvider;
 
-    function setCheckBox(e) {
-        const orderId = Number(e.target.id);
-        props.isChecked.push(orderId);
+    function pushCheckedBox(e) {
+        props.pushCheckedBox(e);
     }
     function editOrder(e) {
     }
@@ -43,7 +42,7 @@ function Table(props) {
                   <tr key={ index }>
                     <td>
                       {/*<button type="button" className="btn" id={ element.id } onClick={ e => deleteOrder(e) }>x</button>*/}
-                      <input type="checkbox" id={ element.id } onClick={ (e) => console.log(e.target.id) }/>
+                      <input type="checkbox" id={ element.id } onClick={ (e) => pushCheckedBox(e) }/>
                     </td>
                     <td>{ element.name }</td>
                     <td>{ getProvider(element.providerId) }</td>

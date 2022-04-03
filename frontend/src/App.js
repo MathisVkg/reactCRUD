@@ -15,6 +15,7 @@ function App() {
   const [dataCategory, setDataCategory] = useState([]);
   const [errorForm, setErrorForm] = useState(false);
   let formData = {};
+  let checkBox = [];
   const toggle = () => setModal(!modal);
   const toggleSuccess = () => setModalSuccess(!modalSuccess);
 
@@ -43,9 +44,6 @@ function App() {
     await axios.get(urlCategory).then((resp) => {
       setDataCategory(resp.data);
     })
-  }
-
-  function deleteOrder(e) {
   }
 
   const formSubmit = (e) => {
@@ -90,12 +88,33 @@ function App() {
     })
   }
 
+  async function deleteOrder() {
+    const url = "https://localhost:7168/OrderDatabase?id=";
+    checkBox.map(elem => {
+      axios.delete(url + elem.id).then(resp => {
+        getOrders();
+      })
+    });
+    checkBox = [];
+  }
+
+  function pushCheckedBox(e) {
+    const orderId = Number(e.target.id);
+    const state = e.target.checked;
+    if (state) {
+      checkBox.push({
+        "state": state,
+        "id": orderId
+      });
+    } else checkBox = checkBox.filter(filter => filter.id !== orderId)
+  }
+
   return (
     <div className="App d-flex flex-column justify-content-center">
       <div className="d-flex justify-content-between align-items-center containerTop">
         <h2 className="title">Gestion de plats</h2>
         <div className="d-flex ">
-          <button type="button" className="btn btn-danger btnDelete" onClick={ e => deleteOrder(e) }>Supprimer</button>
+          <button type="button" className="btn btn-danger btnDelete" onClick={ deleteOrder }>Supprimer</button>
           <Button className="colorBtn" onClick={ toggle }>Ajouter +</Button>
           <PopupModal
               modal= {modal}
@@ -115,6 +134,7 @@ function App() {
             dataOrder = {dataOrder}
             dataProvider = {dataProvider}
             dataCategory = {dataCategory}
+            pushCheckedBox = {pushCheckedBox}
         />
     </div>
   )
