@@ -5,7 +5,7 @@ body {
 }
 
 .containerTop {
-  background-color: #0d6efd;
+  background-color: #408cf1;
   margin: 0;
   padding: 15px 25px;
 }
@@ -25,8 +25,8 @@ body {
 }
 
 .colorBtn {
-  background-color: #2db374 !important;
-  border: #2db374 !important;
+  background-color: #4ece8f !important;
+  border: #4ece8f !important;
 }
 
 .modal-header {
@@ -49,7 +49,7 @@ body {
 }
 
 path {
-  stroke: #2db374;
+  stroke: #4ece8f;
 }
 
 .modalTitleSuccess {
@@ -65,7 +65,7 @@ path {
 
 .buttonOk {
   color: #fff;
-  background-color: #6f42c1;
+  background-color: #8156d0;
   margin-bottom: 10px;
   border: 1px solid transparent;
   padding: .375rem .75rem;
@@ -95,8 +95,8 @@ path {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  background-color: #2db374;
-  border: 1px solid #2db374;
+  background-color: #4ece8f;
+  border: 1px solid #4ece8f;
   padding: 0.175rem .75rem;
   font-size: 1rem;
   border-radius: .25rem;
@@ -120,7 +120,7 @@ path {
 
 .errorSpan {
   margin-top: 5px;
-  color: rgb(216, 79, 79);
+  color: #D84F4FFF;
 }
 
 .btnEdit {

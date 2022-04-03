@@ -19,38 +19,10 @@ namespace WebAPIReactCrud.Controllers
         }
 
         [HttpGet(Name = "GetOrders")]
-        public Task<ActionResult<OrderDto>> GetOders()
+        public IActionResult GetOders()
         {
-            var orders = _context.Orders.ToArray();
+            List<Order> orders = _context.Orders.ToList();
             return Ok(orders);
-        }
-    }
-
-    [ApiController]
-    [Route("[controller]")]
-    public class ProviderDatabaseController : ControllerBase
-    {
-        private static readonly string[] RandomProvider = new[]
-        {
-        "Sysco", "Regalgel", "Azdistribution"
-        };
-        private readonly ILogger<ProviderDatabaseController> _logger;
-
-        public ProviderDatabaseController(ILogger<ProviderDatabaseController> logger)
-        {
-            _logger = logger;
-        }
-
-        [HttpGet(Name = "GetProviders")]
-        public IEnumerable<Provider> Get()
-        {
-
-            return Enumerable.Range(1, 5).Select(index => new Provider
-            {
-                Id = index++,
-                Name = RandomProvider[Random.Shared.Next(RandomProvider.Length)]
-            })
-            .ToArray();
         }
     }
 
