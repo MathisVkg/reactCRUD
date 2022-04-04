@@ -16,7 +16,7 @@ var configuration = provider.GetService<IConfiguration>();
 
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
 builder.Services.AddDbContext<MyDbContext>(options => 
-        options.UseMySql("server=localhost; user=root; password=qeHZd84fPU37; database=ReactCrudDb;", serverVersion)
+        options.UseMySql("server=localhost; user=root; password=root12345678; database=ReactCrudDb;", serverVersion)
     );
 
 builder.Services.AddCors(options =>

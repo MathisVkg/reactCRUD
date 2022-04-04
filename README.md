@@ -26,7 +26,7 @@ Vérifier que les dépendances pour le backend dans le nuget package sont bien i
 
 Pour le frontend, placer dans le dossier frontend dans votre IDE et faites un **npm start**.
 <br>
-Pour le backend, appuyez sur **run** dans votre IDE.
+Pour le backend, changer l'utilisateur et le mot de passe dans le fichier **programs.cs** pour correspondre avec votre database et appuyez sur **run** dans votre IDE.
 
 # Erreur possible
 
