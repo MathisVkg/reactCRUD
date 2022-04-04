@@ -1,3 +1,4 @@
+using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using WebAPIReactCrud.Models;
 using Microsoft.EntityFrameworkCore;
@@ -42,23 +43,19 @@ namespace WebAPIReactCrud.Controllers
         [HttpPut(Name = "PutOrder")]
         public async Task<ActionResult<OrderDto>> PutOrder(int id, OrderDto orderdto)
         {
-            var order = await _context.Orders.FindAsync(id);
+            var order = _context.Orders.FirstOrDefault(e => e.Id == id);
             if (order == null)
             {
                 return NotFound();
             }
-            _context.Orders.Remove(order);
+
+            order.Name = orderdto.Name;
+            order.Price = orderdto.Price;
+            order.ProviderId = orderdto.ProviderId;
+            order.CategoryId = orderdto.CategoryId;
             
-            var orderPut = new Order
-            {
-                Name = orderdto.Name,
-                Price = orderdto.Price,
-                ProviderId = orderdto.ProviderId,
-                CategoryId = orderdto.CategoryId
-            };
-            _context.Orders.Add(orderPut);
             await _context.SaveChangesAsync();
-            return CreatedAtAction("GetOrders", orderPut);
+            return CreatedAtAction("GetOrders", order);
         }
         
         [HttpDelete(Name = "DeleteOrder")]
