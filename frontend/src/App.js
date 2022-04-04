@@ -37,7 +37,6 @@ function App() {
   async function getOrders() {
     await axios.get(urlOrders).then((resp) => {
       setDataOrder(resp.data);
-      console.log(resp.data);
     })
   }
   async function getProviders() {
