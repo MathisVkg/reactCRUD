@@ -150,11 +150,13 @@ function App() {
               modal= {modal}
               toggle = {toggle}
               formSubmit= {formSubmit}
+              dataOrder = {dataOrder}
               dataProvider = {dataProvider}
               dataCategory = {dataCategory}
               errorForm = {errorForm}
               editBtn = {editBtn}
               editSubmit = {editSubmit}
+              editId = {editId}
           />
           <SuccessModal
               modalSuccess= {modalSuccess}
