@@ -32,6 +32,6 @@ Pour le backend, appuyez sur **run** dans votre IDE.
 
 Si au moment de votre **npm start** vous avez une erreur "import 'bootstrap/dist/css/bootstrap.min.css' missing" vérifier bien que le package bootstrap est bien installé
 grâce à cette commande **npm install --save bootstrap**.
-<br>
+<br><br>
 Si vous avez une erreur de CORS, dans le fichier **appsettings.Development.json**, vérifier que la ligne **frontend_url** soit bien écrite comme ceci: "frontend_url": "*".
 
