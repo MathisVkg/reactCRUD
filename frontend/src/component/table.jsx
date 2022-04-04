@@ -8,7 +8,8 @@ function Table(props) {
     function pushCheckedBox(e) {
         props.pushCheckedBox(e);
     }
-    function editOrder(e) {
+    function setEditState(e) {
+        props.setEditState(e);
     }
     function getProvider(id) {
         provider.map(elem => {
@@ -48,7 +49,7 @@ function Table(props) {
                     <td>{ getProvider(element.providerId) }</td>
                     <td>{ getCategory(element.categoryId) }</td>
                     <td>{ element.price }</td>
-                    <td><button className="btn btnEdit" id={ element.id } onClick={ (e) => console.log(e.target.id) }>editer</button></td>
+                    <td><button className="btn btnEdit" id={ element.id } onClick={ (e) =>setEditState(e) }>editer</button></td>
                   </tr> )
               })}
           </tbody>

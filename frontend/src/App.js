@@ -14,9 +14,14 @@ function App() {
   const [dataProvider, setDataProvider] = useState([]);
   const [dataCategory, setDataCategory] = useState([]);
   const [errorForm, setErrorForm] = useState(false);
+  const [editBtn, setEditBtn] = useState(false);
+  const [editId, setEditId] = useState(0);
   let formData = {};
   let checkBox = [];
-  const toggle = () => setModal(!modal);
+  const toggle = () => {
+    setEditBtn(false);
+    setModal(!modal);
+  };
   const toggleSuccess = () => setModalSuccess(!modalSuccess);
 
   const urlOrders = "https://localhost:7168/OrderDatabase";
@@ -44,6 +49,18 @@ function App() {
     await axios.get(urlCategory).then((resp) => {
       setDataCategory(resp.data);
     })
+  }
+
+  const editSubmit = (e) => {
+    e.preventDefault();
+    checkForm(e);
+    if (!checkForm(e)) return
+    else {
+      setModalState();
+      console.log('2', formData);
+      setEditBtn(false);
+      putOrder();
+    }
   }
 
   const formSubmit = (e) => {
@@ -74,10 +91,25 @@ function App() {
     }
   }
 
+  function setEditState(e) {
+    setEditBtn(true);
+    setEditId(Number(e.target.id));
+    setModal(!modal);
+  }
+
   function setModalState() {
     setErrorForm(false);
     setModal(!modal);
     setTimeout(() => { setModalSuccess(!modalSuccess); }, 150);
+  }
+
+  async function putOrder() {
+    const url = "https://localhost:7168/OrderDatabase?id=";
+    await axios.put(url + editId, formData).then(resp => {
+      if (resp.status === 201) {
+        getOrders();
+      }
+    })
   }
 
   async function postOrder() {
@@ -123,6 +155,8 @@ function App() {
               dataProvider = {dataProvider}
               dataCategory = {dataCategory}
               errorForm = {errorForm}
+              editBtn = {editBtn}
+              editSubmit = {editSubmit}
           />
           <SuccessModal
               modalSuccess= {modalSuccess}
@@ -135,6 +169,7 @@ function App() {
             dataProvider = {dataProvider}
             dataCategory = {dataCategory}
             pushCheckedBox = {pushCheckedBox}
+            setEditState = {setEditState}
         />
     </div>
   )

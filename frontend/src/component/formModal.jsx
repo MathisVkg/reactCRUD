@@ -6,11 +6,15 @@ function PopupModal(props) {
     const category = props.dataCategory;
     const provider = props.dataProvider;
     const errorFrom = props.errorForm
+    const editBtn = props.editBtn;
     const toggle = () => {
         props.toggle();
     };
     const formSubmit = (e) => {
         props.formSubmit(e);
+    }
+    const editSubmit = (e) => {
+        props.editSubmit(e);
     }
 
     return(
@@ -21,7 +25,7 @@ function PopupModal(props) {
                     <button type="button" className="cross-modal btn" onClick={ toggle }>x</button>
                 </ModalHeader>
                 <ModalBody>
-                    <form onSubmit={formSubmit} className="d-flex flex-column">
+                    <form onSubmit={editBtn ? editSubmit : formSubmit} className="d-flex flex-column">
                         <div className="input-group flex-column mt-2">
                             <span>Libellé du plat</span>
                             <input className="form-control w-100" type="text" name="name"/>
