@@ -6,6 +6,13 @@ Cloner le repository, placer vous dans le dossier **frontend** faites un **npm i
 Vérifier que les dépendances pour le backend dans le nuget package sont bien installées.
 
 ## Dépendances:
+**Frontend**
+- bootstrap
+- react-icons
+- reactstrap
+- axios
+
+**Backend**
 - Microsoft.EntityFrameworkCore.Tools
 - Microsoft.EntityFrameworkCore.Design
 - AutoMapper
