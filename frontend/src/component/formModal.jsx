@@ -21,7 +21,7 @@ function PopupModal(props) {
         <div>
             <Modal centered fullscreen="md" size="" backdrop="static" isOpen={ modal } toggle={ toggle }>
                 <ModalHeader>
-                    <p className="modalTitle">Ajouter un plat</p>
+                    <p className="modalTitle">{ editBtn ? 'Editer votre plat' : 'Ajouter un plat' }</p>
                     <button type="button" className="cross-modal btn" onClick={ toggle }>x</button>
                 </ModalHeader>
                 <ModalBody>

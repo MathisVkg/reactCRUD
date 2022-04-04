@@ -126,4 +126,16 @@ path {
 .btnEdit {
   position: relative;
   z-index: 200;
+  padding: 5px;
+  background-color: unset;
+  border: unset;
+}
+
+tr {
+  vertical-align: initial;
+}
+
+.editIcon {
+  position: relative;
+  z-index: -20;
 }

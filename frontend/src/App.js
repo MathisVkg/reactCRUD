@@ -57,7 +57,6 @@ function App() {
     if (!checkForm(e)) return
     else {
       setModalState();
-      console.log('2', formData);
       setEditBtn(false);
       putOrder();
     }
@@ -91,7 +90,7 @@ function App() {
     }
   }
 
-  function setEditState(e) {
+  function openModalEdit(e) {
     setEditBtn(true);
     setEditId(Number(e.target.id));
     setModal(!modal);
@@ -169,7 +168,7 @@ function App() {
             dataProvider = {dataProvider}
             dataCategory = {dataCategory}
             pushCheckedBox = {pushCheckedBox}
-            setEditState = {setEditState}
+            openModalEdit = {openModalEdit}
         />
     </div>
   )
