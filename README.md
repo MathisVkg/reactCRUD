@@ -4,6 +4,8 @@
 
 Cloner le repository, placer vous dans le dossier **frontend** faites un **npm install** pour télécharger les packgaes nécessaires au bon fonctionnement.
 Vérifier que les dépendances pour le backend dans le nuget package sont bien installées.
+<br>
+Vous trouverez dans le dossier **Sql files** les fichiers sql pour setup la database.
 
 ## Dépendances:
 **Frontend**
